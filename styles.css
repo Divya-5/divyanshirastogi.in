@@ -111,6 +111,7 @@ hr {
 
 .navigation .link-active {
   font-weight: bold;
+  color:black
 }
 
 /** header **/
