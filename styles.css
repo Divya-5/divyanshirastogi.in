@@ -115,6 +115,9 @@ hr {
 }
 
 /** header **/
+.showcase-blog-img{
+  text-align: center;
+}
 .hero {
   padding: 2rem;
 }
@@ -279,3 +282,4 @@ hr {
     align-content: center;
   }
 }
+

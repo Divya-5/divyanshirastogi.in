@@ -1,106 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
-    <title>Blogs</title>
-  </head>
 
-  <body>
-    <nav class="navigation container">
-      <div class="nav-brand">
-        <img class="author-img" src="images/divyanshi.jpeg"  alt="divyanshi-img" />
-        <ul class="list-non-bullet nav-pills">
-          <li class="list-item-inline">
-            <a class="link link-active" href="/" target="_blank">Home</a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="/projects.html" target="_blank">Projects</a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link link-active" href="/blogs.html" target="_blank">Blogs</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Blogs</title>
+</head>
 
-    <header class="hero">
-      <h1 class="hero-heading">
-        this is a <span class="heading-inverted">dummy</span> blog
-      </h1>
-    </header>
-
-    <article class="container-center showcase-blog">
-      <p>
-        Dummy text: Its function as a filler or as a tool for comparing the
-        visual impression of different typefaces Dummy text is text that is used
-        in the publishing industry or by web designers to occupy the space which
-        will later be filled with 'real' content. This is required when, for
-        example, the final text is not yet available. Dummy text is also known
-        as 'fill text'. It is said that song composers of the past used dummy
-        texts as lyrics when writing melodies in order to have a 'ready-made'
-        text to sing with the melody. Dummy texts have been in use by
-        typesetters since the 16th century.
-      </p>
-
-      <h2>The usefulness of nonsensical content</h2>
-      <p>
-        Dummy text is also used to demonstrate the appearance of different
-        typefaces and layouts, and in general the content of dummy text is
-        nonsensical. Due to its widespread use as filler text for layouts,
-        non-readability is of great importance: human perception is tuned to
-        recognize certain patterns and repetitions in texts. If the distribution
-        of letters and 'words' is random, the reader will not be distracted from
-        making a neutral judgement on the visual impact and readability of the
-        typefaces (typography), or the distribution of text on the page (layout
-        or type area). For this reason, dummy text usually consists of a more or
-        less random series of words or syllables. This prevents repetitive
-        patterns from impairing the overall visual impression and facilitates
-        the comparison of different typefaces. Furthermore, it is advantageous
-        when the dummy text is relatively realistic so that the layout
-        impression of the final publication is not compromised.
-      </p>
-
-      <h2>
-        Incomprehensibility or readability? <small>That is the question.</small>
-      </h2>
-      <p>
-        The most well-known dummy text is the 'Lorem Ipsum', which is said to
-        have originated in the 16th century. Lorem Ipsum is composed in a
-        pseudo-Latin language which more or less corresponds to 'proper' Latin.
-        It contains a series of real Latin words. This ancient dummy text is
-        also incomprehensible, but it imitates the rhythm of most European
-        languages in Latin script. The advantage of its Latin origin and the
-        relative meaninglessness of Lorum Ipsum is that the text does not
-        attract attention to itself or distract the viewer's attention from the
-        layout.
-      </p>
-    </article>
-
-    <footer class="footer container">
-      <ul class="list-non-bullet">
+<body>
+  <nav class="navigation container">
+    <div class="nav-brand">
+      <img class="author-img" src="images/divyanshi.jpeg" alt="divyanshi-img" />
+      <ul class="list-non-bullet nav-pills">
         <li class="list-item-inline">
-          <a class="link" href="https://github.com/Divya-5" target="_blank">
-            <img class="icons" src="images/github-logo-silhouette-in-a-square.png" alt="github-icon"/>
-          </a>
+          <a class="link link-active" href="/" target="_blank">Home</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="https://twitter.com/DivyanshiR" target="_blank">
-            <img class="icons" src="images/twitter.png"  alt="twitter-icon" />
-          </a>
+          <a class="link" href="/projects.html" target="_blank">Projects</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="https://www.linkedin.com/in/divya5rastogi/" target="_blank">
-            <img class="icons" src="images/linkedin (1).png" alt="linkedin-icon" />
-          </a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="mailto: divyanshi.rastogi001@gmail.com" target="_blank">
-            <img class="icons" src="images/mail.png"   alt="mail-icon"/>
-          </a>
+          <a class="link link-active" href="/blogs.html" target="_blank">Blogs</a>
         </li>
       </ul>
-    </footer>
-  </body>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>
+      Good HTML Practices
+    </h1>
+  </header>
+
+  <article class="container-center showcase-blog">
+    <h2>HTML Best Practices</h2>
+    <h3>Use a Correct Doctype</h3>
+    <p>
+      This is a rather easy step considering that we use HTML 5 now.
+      But incase it is not HTML 5 you are writing, or a rather stricter version of HTML like 4.xx refer this website to
+      figure out which doctype to declare.
+      The doctype declaration tells the browser about the XHTML standards you will be using and helps it read and render
+      your markup correctly.
+    </p>
+    <h3>Use proper styling</h3>
+    <p>
+      Never give inline styles: It cannot be overridden without JavaScript</p>
+    <p>Put your stylesheets inside the head tag.This is so that, the styles load first and then the document will load
+      with the styles, if it’s the other way round, the document will get loaded and then the styles will repaint the
+      DOM causing performance degradation. </p>
+
+
+    <h3>Structure is important</h3>
+    <p>We have all tested HTML snippets just by putting aor other tag snippets and saving it just to see how it render.
+      While this works, this is neither the standard nor will it be supported in all the browsers. Hence always have a
+      well defined document structure.</p>
+    <img src="images/doct.png">
+    <h3>Strictly Avoid Duplicate IDs
+    </h3>
+    <p>It is fundamentally wrong to have a duplicate ID since it is a unique identifier.</p>
+    <h3>SEO and Miscellaneous Tips</h3>
+    <p>Use alt tags for images.</p>
+    <p>Use only a SINGLE <strong>&lt; h1 &gt;</strong> tag. It is treated as your page headline. Use the <strong>&lt; h2
+        &gt;</strong> tags for subheadings, <strong>&lt; h3 &gt;</strong> for sub-sub headings and so on.</p>
+
+    <p>Only use classes and IDs whenever it is absolutely necessary. If it can be referenced and styled generically
+      without it, then make use of it. </p>
+    <h3>Always validate your HTML Markups</h3>
+    <p>According to the W3C, there are certain standards that need to be upheld to write a good HTML code. You can
+      validate your markup by visitng their official validation tool online at <a href="http://validator.w3.org/">http://validator.w3.org/</a>
+      So, for whichever tips mentioned in the remainder of this article, combine it with the above validation for best
+      results.</p>
+  </article>
+
+  <footer class="footer container">
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">
+        <a class="link" href="https://github.com/Divya-5" target="_blank">
+          <img class="icons" src="images/github-logo-silhouette-in-a-square.png" alt="github-icon" />
+        </a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="https://twitter.com/DivyanshiR" target="_blank">
+          <img class="icons" src="images/twitter.png" alt="twitter-icon" />
+        </a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="https://www.linkedin.com/in/divya5rastogi/" target="_blank">
+          <img class="icons" src="images/linkedin (1).png" alt="linkedin-icon" />
+        </a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="mailto: divyanshi.rastogi001@gmail.com" target="_blank">
+          <img class="icons" src="images/mail.png" alt="mail-icon" />
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
