@@ -231,7 +231,9 @@ hr {
   text-align: center;
   margin: 3rem auto;
 }
-
+.showcase-lists{
+  padding: 2rem;
+}
 .showcase-list h2 {
   margin: 0;
 }
