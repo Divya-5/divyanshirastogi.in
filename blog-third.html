@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="styles.css" rel="stylesheet" />
-  <title>Blogs-Page</title>
+  <title>Blogs</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
           <a class="link" href="/projects.html" target="_blank">Projects</a>
         </li>
         <li class="list-item-inline">
-          <a class="link link-active" href="/" target="_blank">Blogs</a>
+          <a class="link link-active" href="/blogs.html" target="_blank">Blogs</a>
         </li>
       </ul>
     </div>
@@ -28,36 +28,46 @@
 
   <header class="hero">
     <h1>
-      Converting SVG files to fonts
+      Intro to JavaScript
     </h1>
   </header>
 
   <article class="container-center showcase-blog">
-    <p> There are generators that allow you to do so. These allow you to upload any number of SVG files and they build a
-      unique set of fonts, just for your project. Then, it’s as easy as adding a provided CSS class to your HTML code
-      and your icon shows up on the page.
-      Scalability is important especially when you view the site on high-resolution screens like retina displays. The
-      advantage that an SVG file gives you — you can scale these icons as much as you like without losing the quality.
-    </p>
-    <h3>How to add a custom icon in IcoMoon?</h3>
-    <p>You night have tried many times to find the perfect icon in the available sets and failed?You dont need to worry,
-      I’ll guide you through the process of getting your SVG image into the set.
-      Just search for IcoMoon.io on google & click on the link which will lead you to the site.
-      <img class="icomoon-one" alt="icon-img" src="images/1_51mdDUKa_NjuCCl3cXKMgg.png">
-    <p>Now click on IcoMoon App & now you can import icons through it.
-      Start by clicking on “Import Icons”.</p>
-    <li>SVG — it needs to be somewhat specific — more about this below</li>
-    <img class="icomoon-one" alt="icon-img" src="images/1_ik9F9-tMdu3bdsEMS_bBMw.png">
-    <li>click on “Generate SVG & More”</li>
-    <li> locate the icon (in example icon-ecommerce”) and hover your mouse over it</li>
-    <li> click on “Generate Font”</li>
-    <p>A zip file is downloaded . Now extract it & you will find the style.css & in fonts folder 4 files which needs to
-      be added in the project .</p>
-    <img class="icomoon-one" alt="icon-img" src="images/1_8tkrwRhuhGybvqakfFm7Ow.png">
-    <h3>Using web fonts created in IcoMoon</h3>
-    <p>OK, so you got your crafted SVG into the IcoMoon tool and created the font. Now you just need to add the font to
-      your project. When adding it you may need to edit the paths in the CSS file to point to where you’re keeping the
-      actual font files.Many times due to the wrong path these font are not getting appeared in the project.</p>
+    <h2>
+    Frontend: Day 2 - Strings continued, Booleans and == || === in JavaScript
+    </h2>
+    <ul>
+      <h4>Indexing</h4>
+      <li>
+To access an individual character, you can use the character's location in the string, called its index. Just put the
+index of the character inside square brackets (starting with [0] as the first character) immediately after the string.
+      </li>
+      <h4>Escaping strings</h4>
+      <li>
+        There are some cases where you might want to create a string that contains more than just numbers and letters. For
+        example, what if you want to use quotes in a string?
+      </li>
+      <code>Ex-2
+      "Hey, "please talk to me.""
+      Uncaught SyntaxError: Unexpected identifier
+      </code>
+      <li>
+        If you try to use quotes within a string, you will receive a SyntaxError like the one above.
+      </li>
+      <li>
+    Because you need to use quotes to denote the beginning and end of strings, the JavaScript engine misinterprets the
+    meaning of your string by thinking > "Hey, " is the string. Then, it sees the remaining
+      </li>
+      <code>
+        please talk to me."" and returns a SyntaxError.
+      </code>
+      <li>
+      If you want to use quotes inside a string, and have JavaScript not misunderstand your intentions, you’ll need a
+      different way to write quotes. Thankfully,JavaScript has a way to do this using the backslash character( \ ).
+      </li>
+      <a href="https://successo.hashnode.dev/frontend-day-2-strings-continued-booleans-and-in-javascript"
+        target="_blank"> Read the whole Blog </a>
+    </ul>
   </article>
 
   <footer class="footer container">
